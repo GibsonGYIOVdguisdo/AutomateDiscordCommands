@@ -18,7 +18,7 @@ class Client(discord.Client):
                 self.command = cmd
         while True:
             print("RAN COMMAND", self.command)
-            self.command.__call__()
+            await self.command.__call__()
             sleep(DELAY)
 client = Client()
 client.run(TOKEN)
