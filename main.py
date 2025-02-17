@@ -4,6 +4,7 @@ import os
 
 dotenv.load_dotenv()
 TOKEN = os.getenv("TOKEN")
+CHANNEL = os.getenv("CHANNEL")
 
 class Client(discord.Client):
     async def on_ready(self):
@@ -11,3 +12,4 @@ class Client(discord.Client):
     
 client = Client()
 client.run(TOKEN)
+
