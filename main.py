@@ -1,9 +1,7 @@
 import discord
-from discord.ext import tasks
 import dotenv
 import os
 from time import sleep
-import asyncio
 
 dotenv.load_dotenv()
 TOKEN = os.getenv("TOKEN")
